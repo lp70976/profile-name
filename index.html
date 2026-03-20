@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="Pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leandro Pinheiro da Costa Jesus Bonfim">
+    <title>This is my profile names</title>
+    <!--This is CSS-->
+    <style>
+        body{
+            background-color: lightgray;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+       img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+
+        }
+
+        button:hover{
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<!--Body Content-->
+<body>
+    <main>
+        <div id="profile">
+    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Profile Photo">
+    <h1>Leandro Jesus</h1>
+    <p id="description">Este é o meu perfil.</p>
+    <button onclick="follow()">Seguir</button>
+</div>
+    </main>
+    <div id="js">
+    <script>
+        function follow() {
+            let button = document.querySelector("button");  //open function
+
+            if (button.innerText === "Seguir") {
+                button.innerText = "Seguindo";
+            } else { 
+                button.innerText = "Seguir";    //close function
+            }
+        }
+
+    </script>
+    </div>
+</body>
+</html>
